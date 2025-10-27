@@ -1,0 +1,192 @@
+
+/*----------------------------------------------------------------
+    Estilização.css
+    Arquivo de estilos CSS para a aplicação de cadastro de livros.
+   ----------------------------------------------------------------*/
+/*----------------------------------------------------------------
+    Autor: Cleyton Silva
+    Data: 27/10/2023
+   ----------------------------------------------------------------*/
+/*
+   Este arquivo contém os estilos CSS para a aplicação de cadastro de livros.
+*/
+/* Reset básico para margens e padding */
+
+/* Estilos para os botões */
+button {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+/* estilo para campo de senha */
+input[type="password"] {
+    width: 80%;                     /* Largura do campo de senha */
+    padding: 10px;                  /* Espaçamento interno */
+    margin-bottom: 10px;            /* Espaçamento abaixo do campo */
+    border: 1px solid #1a1515;     /* cor da borda */
+    border-radius: 20px;            /* Bordas arredondadas */
+    box-sizing: border-box;         /* Inclui padding e border na largura total */
+        
+}
+/* Estilos para o contêiner de login */
+.login-container {
+    width: 300px;                      /* Largura do contêiner de login */
+    margin: 100px auto;                /* Centraliza o contêiner na página */
+    padding: 20px;                     /* Espaçamento interno */
+    background: #f4f4f4;              /* Cor de fundo do contêiner */
+    border-radius: 10px;               /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra suave */
+    
+}
+
+
+
+/* Estilos gerais para o corpo da página */
+body {
+   background: #52ec9f;         /* Cor de fundo */
+   border: rgb(156, 156, 39);   /* cor da borda */
+   background-size: cover;          /* cobre toda a tela */
+   background-attachment: center;   /* fixa a imagem de fundo */
+   background-position: no-repeat;  /* não repete a imagem */
+   height: 100vh;                    /* altura total da tela */
+   color: #333;                     /* cor do texto */
+   font-family: Arial, sans-serif;  /* fonte do texto */
+   margin: 0;                       /* remove margens */
+   padding: 0;                      /* remove espaçamento interno */
+}
+
+/* Estilos para o formulário de pesquisa */
+#searchform {
+    display: flex;                  /* Usa flexbox para layout */
+    align-items: center;            /* Alinha itens verticalmente ao centro */
+    justify-content: center;        /* Centraliza itens horizontalmente */
+    margin-top: 20px;              /* Espaçamento superior */
+    height: 5vh;                   /* Altura do formulário */
+    margin-top: 50px;               /* Espaçamento superior */
+    margin: 0%;                     /* Remove margens */
+    padding: 0%;                    /* Remove espaçamento interno */
+
+}
+/* Estilos para o campo de entrada de texto */
+img {
+    height: 110px;/* Ajuste a altura conforme necessário */
+    
+
+}
+/* Estilos para o menu de navegação */
+nav.menu {
+    background-color: #333;               /* Cor de fundo do menu */
+    overflow: hidden;                     /* Garante que o conteúdo fique dentro do menu */
+}
+/* Estilos para os itens do menu */
+nav.menu ul {
+    list-style-type: none;                /* Remove marcadores de lista */
+    padding: 0;                           /* Remove espaçamento interno */
+    margin: 0;                            /* Remove margens */
+    display: flex;                        /* Usa flexbox para layout */
+    justify-content: center;              /* Centraliza os itens do menu */
+}
+/* Estilos para os links do menu */
+nav.menu ul li a {
+    display: block;                       /* Faz o link ocupar todo o espaço do item */
+    color: white;                        /* Cor do texto */
+    text-align: center;                  /* Centraliza o texto */
+    padding: 14px 16px;                  /* Espaçamento interno */
+    text-decoration: none;                /* Remove sublinhado */
+}
+/* Estilos para os itens do menu */
+nav.menu li {
+    margin:0 15px;                       /* Espaçamento entre os itens do menu */
+}
+
+/* Estilos para os títulos */
+h1, h2, h3 {
+    color: #333;                       /* cor dos títulos */
+    text-align: center;                /* centraliza os títulos */
+}
+/* Estilos para o formulário */
+form {
+    background: #79cfa7;               /* Cor de fundo do formulário */
+    padding: 30px;                       /* Espaçamento interno */
+    border-radius: 10px;                 /* Bordas arredondadas */ 
+    margin: 20px auto;                   /* Centraliza o formulário */
+    width: 400px;                        /* Largura do formulário */
+    margin: 20px auto;                   /* Centraliza o formulário */
+    width: 400px;                        /* Largura do formulário */
+    padding: 20px;                       /* Espaçamento interno */
+    border-radius: 10px;                 /* Bordas arredondadas */
+    border: 1px solid #6d3b3b;           /* cor da borda */
+    box-shadow: 0 0 5px rgba(109, 59, 59, 0.1); /* sombra suave */
+}
+/* Estilos para os rótulos dos campos */
+label {
+    display: block;       /* Faz o label ocupar toda a linha */
+    margin-bottom: 5px;     /* Espaçamento abaixo do label */
+}
+
+/* Estilos para os campos de entrada */
+input[type="text"], 
+input[type="number"],
+input[type="submit"] {
+    width: 80%;                     /* Largura dos campos de entrada */
+    padding: 10px;                  /* Espaçamento interno */
+    margin-bottom: 10px;            /* Espaçamento abaixo dos campos */
+    border: 1px solid #1a1515;     /* cor da borda */
+    border-radius: 20px;            /* Bordas arredondadas */
+    box-sizing: border-box;         /* Inclui padding e border na largura total */
+        
+}   
+
+/* Estilos para o botão de envio */
+input[type="submit"] { 
+    background: #5cb85c;                /* Cor de fundo do botão */
+    color: white;                       /* Cor do texto do botão */
+    border: none;                       /* Remove borda */
+    cursor: pointer;                   /* Muda o cursor ao passar sobre o botão */
+
+
+}
+/* Estilos para o botão de envio ao passar o mouse */
+input[type="submit"]:hover {
+    background: #4cae4c;  /* Cor de fundo do botão ao passar o mouse */
+}
+/* Estilos para a lista de itens */
+ul {
+    list-style-type: none; /* Remove marcadores de lista */
+    padding: 0;         /* Remove espaçamento interno */
+    margin: 0;         /* Remove margens */
+    list-style: none;   /* Remove marcadores de lista */
+
+}
+
+
+/* Estilos para o contêiner dos formulários */
+.container {
+    display: flex;                       /* coloca os elementos lado a lado */
+    justify-content: space-around;      /* espaço entre os elementos */
+    margin-top: 10px;                   /* Espaçamento superior */
+    margin-bottom: 10px;                /* Espaçamento inferior */
+    padding: 10px;                       /* Espaçamento interno */
+
+
+
+    
+}
+/* Estilos para cada formulário */
+.formulario {
+    background: #816868;                /* Cor de fundo do formulário */
+    padding: 20px;                       /* Espaçamento interno */
+    border: 1px solid #ddd;              /* cor da borda */
+    border-radius: 5px;                  /* Bordas arredondadas */
+    width: 300px;                        /* tamanho de cada formulario */
+}
+/* Estilos para o título de cada formulário */
+.formulario h3 {
+    text-align: center;   /* centraliza o texto */
+    color: #06af4c;       /* cor do texto */
+}

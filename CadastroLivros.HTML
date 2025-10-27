@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Aqui é onde o HTML "chama" o CSS-->
+    <link rel="stylesheet" href="Stilização.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="conecxao.php">
+    
+    
+    <title>Sistema de Gerenciamento de Biblioteca</title>
+
+
+</head>
+
+<body>
+
+    <!-- barra de pesquisa -->
+    <div class="heard-mid-area ptb-40"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-2 col-5"></div>
+            <div class="logo-area text-center logo-xs-mrg"></div>
+            <a href="index.html"></a>
+            <img src="nv.png" alt="Logo da Biblioteca" class="logo">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12"></div>
+                <div class="header-search header-search-2">
+                    <div class="header-search-inner">
+                        <form action="book/search.php" class="row">
+                            <div class="col-10 offset-1" id="searchform">
+                                <input type="text" placeholder="Pesquisar livros..." name="search" value>
+                                <button type="submit" class="bnt btn-default">Pesquisar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+</body>
+    <!-- Estilos CSS embutidos -->
+    <style>  
+        
+
+        .titulo {
+            text-align: center;/* Centraliza o título */
+            font-size: 36px; /* Tamanho da fonte */
+            color: #333;
+
+        }
+
+        .logo img {
+            height: 100px;/* Ajuste a altura conforme necessário */
+            width: fit-content; /* Mantém a proporção da imagem */
+
+        }
+
+        .container {
+            display: flex;              /* coloca os elementos lado a lado */
+            gap: 10px;                  /* espaço entre os elementos */
+            gap: 2px;                   /* espaço entre os elementos */
+            justify-content: center;    /*centraliza na tela*/
+            align-items: flex-start;    /*alinha os itens ao topo*/
+
+        }
+
+    
+        body {
+            font-family: Arial, sans-serif; /* Fonte padrão */
+            margin: 20px;                 /* Margem ao redor da página */
+            background-color: #79cfa7;  /* Cor de fundo suave */
+          
+
+        }
+        .container {
+            display: flex;           /* coloca os elementos lado a lado */
+            gap: 10px;               /* espaço entre os elementos */
+            flex-wrap: wrap;         /* permite que os itens se movam para a próxima linha, se necessário */
+            justify-content: center; /*centraliza na tela*/
+            align-items: flex-start; /*alinha os itens ao topo*/
+            flex-wrap: wrap;          /* permite que os itens se movam para a próxima linha, se necessário */
+            
+
+        }
+        .formulario {
+            background-color: #f4f4f4;                  /* Cor de fundo do formulário */
+            padding: 20px;                                 /* Espaçamento interno */
+            border-radius: 20px;                            /* bordas arredondadas */
+            width: 300px;                                   /* tamanho de cada formulario */
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);      /* sombra suave */
+            margin-top: 20px;                               /* espaço superior entre os formulários */
+
+
+        }
+        .formulario h3 {
+            text-align: center; /* Centraliza o título do formulário */
+        }
+    </style>
+    
+
+</head>
+<body>
+    
+    <!-- Navegação -->
+    
+    </div>
+    <nav 
+        style="text-align: center; margin-bottom: 20px;">
+        <ul style="list-style-type: none; padding: 0; display: inline-flex; gap: 50px;">
+            <button><a style="text-decoration: none; color: inherit;" href="CadastroLivros.HTML">Cadastro de Livros</a></button>
+            <button><a style="text-decoration: none; color: inherit;" href="CadastroUsuarios.HTML">Cadastro de Usuários</a></button>
+            <button><a style="text-decoration: none; color: inherit;" href="EmprestimoDeLivros.HTML">Empréstimo de Livros</a></button>
+            <button><a style="text-decoration: none; color: inherit;" href="DevolucaoDeLivros.HTML">Devolução de Livros</a></button>
+            <button><a style="text-decoration: none; color: inherit;" href="Relatorios.HTML">Relatórios</a></button>
+
+            
+        </ul>
+        <!-- button  -->
+        
+
+
+
+
+    </nav>
+
+        <!-- Cadastro de Livros -->
+    <h1 
+         style="color:rgb(53, 48, 48); text-align: center;">Sistema de Gerenciamento de Biblioteca</h1>
+    <div class="container">
+        <form class="formulario">   
+            <h3>Cadastro dos Livros</h3>
+            <label for="title">Título do Livro:</label><br>
+            <input type="text" id="title" name="title" required><br><br>
+
+            <label for="author">Autor:</label><br>
+            <input type="text" id="author" name="author" required><br><br>
+
+            <label for="isbn">ISBN:</label><br>
+            <input type="text" id="isbn" name="isbn" required><br><br>
+
+            <label for="publisher">Editora:</label><br>
+            <input type="text" id="publisher" name="publisher"><br><br>
+
+            <label for="year">Ano de Publicação:</label><br>
+            <input type="number" id="year" name="year" min="0" max="2024"><br><br>
+
+            <input type="submit" value="Cadastrar Livro">
+        <script>
+            function validateBookForm() {
+                // Obter os valores dos campos de entrada
+                var title = document.getElementById("title").value;
+                var author = document.getElementById("author").value;
+                var isbn = document.getElementById("isbn").value;
+
+                // Verificar se os campos obrigatórios estão preenchidos
+                if (title === "" || author === "" || isbn === "") {
+                    alert("Por favor, preencha todos os campos obrigatórios.");
+                    return false; // Impede o envio do formulário
+                }
+
+                // Aqui você pode adicionar mais validações, como formato de ISBN, ano de publicação, etc.
+
+                return true; // Permite o envio do formulário
+            }    
+
+        </script>
+    </form>
+    <!-- Formulário de Cadastro de Usuários -->
+    <form class="formulario">
+        <h3>Cadastro dos Usuários</h3>
+
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="cpf">CPF:</label><br>
+            <input type="text" id="cpf" name="cpf" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" required><br><br>
+
+            <label for="password">Senha:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="phone">Telefone:</label><br>
+            <input type="text" id="phone" name="phone"><br><br>
+            <input type="submit" value="Cadastrar Usuário">
+
+        <script>
+            function validateUserForm() {
+                // Obter os valores dos campos de entrada
+                var name = document.getElementById("name").value;
+                var cpf = document.getElementById("cpf").value;
+                var email = document.getElementById("email").value;
+
+                // Verificar se os campos obrigatórios estão preenchidos
+                if (name === "" || cpf === "" || email === "") {
+                    alert("Por favor, preencha todos os campos obrigatórios.");
+                    return false; // Impede o envio do formulário
+                }
+
+                // Aqui você pode adicionar mais validações, como formato de email, validação de CPF, etc.
+
+                return true; // Permite o envio do formulário
+            }  
+        </script>
+            
+        </form>
+        <form action="Biblioteca.py" method="post" class="formulario">
+            <h3> Login </h3>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" required><br><br>
+
+            <label for="password">Senha:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <a href="RecuperarSenha.HTML">Esqueci minha senha</a><br><br>
+
+            <input type="submit" value="Entrar"></button>
+  
+        </form>
+        <script>
+            function validateLogin() {
+                // Obter os valores dos campos de entrada
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+
+                // Verificar se os campos estão preenchidos
+                if (email === "" || password === "") {
+                    alert("Por favor, preencha todos os campos.");
+                    return false; // Impede o envio do formulário
+                }
+
+                // Aqui você pode adicionar mais validações, como formato de email, força da senha, etc.
+
+                return true; // Permite o envio do formulário
+            }
+             
+        </script>
+    </div>
+</body>
+ 
+</html>
