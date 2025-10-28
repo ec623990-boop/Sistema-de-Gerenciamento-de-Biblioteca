@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento do Requisito</title>
+</head>
+  <body>
+
+    <h1><u>Plano de requisitos do cliente da biblioteca digital.</u></h1>
+        <br>
+     <h2>Nome do Projeto:<u>Sistema de gerenciamento de Biblioteca</u> (Feito por: Deyvsson José)</h2>
+<br>
+
+<tbody>
+
+  <h3><u>Descrição geral dos usuários:</u></h3>
+  
+  <table border="5" style="border-collapse: collapse;">
+
+    <thead>
+    <tr>
+      
+      <th>Tipo de Usuário</th>
+      <th>Descrição</th>
+      <th>Permissões principais</th>
+      <th>Necessidades e expectativas</th>
+      <th>Requisitos funcionais e não funcionais</th>
+      </tr>
+     
+    </thead>
+  <tbody>
+    
+  <tr>
+  <td>Leitor (Estudantes, Professorese e outros)</td>
+  <td>Usuário que buscam acesso comum com a biblioteca.</td>
+  <td>Logar, ler livros online e baixar livros de forma fácil, rápida e segura. Além de avaliar suas obras.</td>
+  <td>Poder ler e buscar obras e valiar-las aonde, quando e quanto quiser de forma confiável e responsiva.</td>
+  <td>Funcionais: <br> Cadastrar o usuário com login e autentificação - Garantir busca de livros online - Download e avaliação de livros - Favoritar as obras</td>
+    
+    </tr>
+    <tr>
+      
+      <td>Autor/Colaborador</td>
+  <td>Usuário que envia ou publica seus livros.</td>
+  <td>Editar seus livros, informações das obras e acompanhar estatisticas da leitura delas.</td>
+  <td>Obter a facilidade de publicar e editar suas obras no sistema.</td>
+  <td>Não Funcionais: <br> Usabilidade e acessibilidade com a interface. - Tempo de resposta tendo que ser menor que 3 segundos. - Disponibilizar nos principais navegadores de computador de mesa ou portátil. - Disponibilizar uso 99% do tempo. - manter segurança via criptográfia e autentificação segura.</td>
+      
+    </tr>
+    <tr>
+      
+      <td>Administrador</td>
+  <td>Usuário que monitora a gestão do sistema.</td>
+  <td>Organizar o sistema de forma viável, confortavel e segura com os usuários que utilizam o sistema.</td>
+  <td>Manter o sistema funcional 24 horas com interface responsiva, intuitiva e monitorada.</td>
+      
+    </tr>
+      
+</tbody>
+    </table>
+
+    <br>
+  
+  </body>
